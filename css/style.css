@@ -1,0 +1,148 @@
+body {
+  font-family: 'Poppins', 'Arial';
+  background-color: #f9f9f9; 
+  color: #333; 
+  line-height: 1.6; 
+}
+
+.skip{
+  position: absolute;
+  left:-1000px;
+}
+
+.skip:focus{
+  left: 110px
+}
+
+header {
+  background: lightpink; 
+  color: white;
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #fff; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 20px;
+}
+
+.active {
+  font-weight: bolder;
+  text-decoration: underline; 
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 20px;
+  background: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: black; 
+}
+
+main h2 {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+  color: grey; 
+}
+
+main h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: pink; 
+}
+
+#main h3 {
+  color: #333; 
+  margin-top: 30px;
+}
+
+main p {
+  color: black; 
+  font-size: 13px;
+  font-weight: 100;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+} 
+
+#main ul {
+  margin-bottom: 30px;
+}
+
+#main li {
+  list-style-type: disc;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top:10px;
+  color: black; 
+}
+
+#main h2,
+#main h3 {
+  border-bottom: 5px solid pink;
+  padding: 20px;
+}
+
+.grid-container,
+.mac-grid-container,
+.bacon-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
+}
+
+.grid-item,
+.mac-grid-container .grid-item,
+.bacon-grid-container .grid-item {
+  width: 100%; 
+} 
+
+main img, video{
+  display: grid; 
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
+  border: 15px;
+  border: 7px solid pink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  video {
+    display: none;
+  }
+
+  source {
+    display: none;
+  }  
+}
+

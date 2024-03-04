@@ -1,2 +1,2 @@
-# ccp_tablet_w24
-tablet view for common class project
+# ccp_starter_code
+Starter Code for your CCP 
