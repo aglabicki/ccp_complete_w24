@@ -23,6 +23,8 @@ header {
   border-bottom: 2px solid #fff; 
 }
 
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -232,7 +234,7 @@ video {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen {
   main img,
   video {
     display: grid;
