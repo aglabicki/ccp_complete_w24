@@ -120,107 +120,6 @@ main p {
   width: 100%; 
 } 
 
-.content {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-/* Style for each pet section */
-.pet-section {
-  display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.pet-section .left {
-  flex: 1;
-  margin-right: 20px; 
-}
-
-
-.pet-section .right {
-  flex: 2;
-}
-
-
-/* .bacon-info {
-  margin-bottom: 20px; 
-}
-
-.sage-info {
-  margin-bottom: 20px; 
-} */
-
-
-/* .bacon-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.sage-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-} */
-
-/* .bacon-photos .grid-item {
-  width: 100%;
-}
-
-.sage-photos .grid-item {
-  width: 100%;
-} */
-
-.video-container {
-  width: 100%;
-}
-
-
-.left {
-  flex: 1;
-}
-
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-main img, video{
-  display: grid; 
-  max-width: 100%; 
-  height: auto;
-  border-radius: 10px;
-
-  border: 7px solid pink;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-}
-
-.section {
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.section .left {
-  flex: 1;
-  margin-right: 20px; 
-  height: auto;
-}
-
-.section .right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
 main img,
 video {
   display: grid; 
@@ -234,7 +133,75 @@ video {
 }
 
 
-@media only screen {
+@media only screen and (min-width: 600px){
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .pet-section {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .pet-section .left {
+    flex: 1;
+    margin-right: 20px; 
+  }
+  
+  
+  .pet-section .right {
+    flex: 2;
+  }
+  
+  .video-container {
+    width: 100%;
+  }
+  
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  main img, video{
+    display: grid; 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+  
+    border: 7px solid pink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .section {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .section .left {
+    flex: 1;
+    margin-right: 20px; 
+    height: auto;
+  }
+  
+  .section .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
   main img,
   video {
     display: grid;
