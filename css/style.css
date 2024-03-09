@@ -46,7 +46,7 @@ nav a {
 
 main {
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px;
   font-size: 20px;
   padding: 20px;
   background: #fff; 
@@ -60,28 +60,30 @@ main h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 30px;
   color: black; 
 }
 
 main h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-style: italic;
   text-align: center;
   margin-top: 20px;
-  color: grey; 
+  color: black; 
 }
 
 main h3 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
   text-align: center;
+  text-decoration-line: underline;
   margin-top: 20px;
   color: pink; 
 }
 
 #main h3 {
   color: #333; 
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px
 }
 
 main p {
@@ -89,8 +91,9 @@ main p {
   font-size: 13px;
   font-weight: 100;
   padding: 15px;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
+  /* justify-content: right; */
 } 
 
 #main ul {
@@ -105,44 +108,161 @@ main p {
   color: black; 
 }
 
-#main h2,
-#main h3 {
-  border-bottom: 5px solid pink;
-  padding: 20px;
-}
-
-.grid-container,
-.mac-grid-container,
-.bacon-grid-container {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 20px; 
 }
 
-.grid-item,
-.mac-grid-container .grid-item,
-.bacon-grid-container .grid-item {
+.grid-item {
   width: 100%; 
 } 
 
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/* Style for each pet section */
+.pet-section {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pet-section .left {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+
+.pet-section .right {
+  flex: 2;
+}
+
+
+/* .bacon-info {
+  margin-bottom: 20px; 
+}
+
+.sage-info {
+  margin-bottom: 20px; 
+} */
+
+
+/* .bacon-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.sage-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+} */
+
+/* .bacon-photos .grid-item {
+  width: 100%;
+}
+
+.sage-photos .grid-item {
+  width: 100%;
+} */
+
+.video-container {
+  width: 100%;
+}
+
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 main img, video{
+  display: grid; 
+  max-width: 100%; 
+  height: auto;
+  border-radius: 10px;
+
+  border: 7px solid pink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.section .left {
+  flex: 1;
+  margin-right: 20px; 
+  height: auto;
+}
+
+.section .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main img,
+video {
   display: grid; 
   margin: 0 auto; 
   max-width: 100%; 
   height: auto;
   border-radius: 10px;
-  border: 15px;
+  border: 5px;
   border: 7px solid pink;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-@media (prefers-reduced-motion: reduce) {
+
+@media only screen and (max-width: 768px) {
+  main img,
   video {
-    display: none;
+    display: grid;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 7px solid pink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite alternate; 
   }
 
+  @keyframes pulse {
+    0% {
+      border-color: pink; 
+    }
+    100% {
+      border-color: deeppink;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  video {
+      display: none;
+  }
   source {
-    display: none;
+      display: none;
   }  
 }
+
+
 
