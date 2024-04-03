@@ -440,8 +440,8 @@ video:hover {
 
 /* styling the form submit button - in desktop */
 #signup-form input[type="submit"] {
-    background-color: deeppink;
-    color: #fff;
+    background-color: pink;
+    color: black;
     cursor: pointer;
 }
 
