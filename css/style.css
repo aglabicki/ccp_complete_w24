@@ -251,6 +251,7 @@ video {
     line-height: 1.6; 
   }
 
+
   .skip {
     position: absolute;
     left: -1000px;
@@ -266,7 +267,7 @@ video {
     padding: 20px 0;
     font-weight: bold;
     text-align: center;
-    border-bottom: 2px solid #fff; 
+    border-bottom: px solid #fff; 
   }
 
   nav ul {
@@ -302,13 +303,14 @@ video {
 
   main h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 30px;
     color: black; 
   }
+
+
 
   main h2 {
     font-size: 30px;
@@ -316,6 +318,7 @@ video {
     text-align: center;
     margin-top: 20px;
     color: black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   main h3 {
@@ -360,15 +363,15 @@ video {
   }
 
   .grid-item {
-    width: 48%; /* Adjust as necessary */
-    margin-bottom: 20px; /* Add some space between the images */
+    width: 48%; 
+    margin-bottom: 20px; 
   }
 
   .photo-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr); 
     grid-gap: 5px;
-    /* justify-content: center; */
+
 }
 
 .photo-grid-container .grid-item {
@@ -396,6 +399,16 @@ video:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+#hidden-content {
+  display: none;
+}
+
+.linear-text-gradient {
+  background: linear-gradient(to top, deeppink, pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
   @keyframes pulse {
     0% {
@@ -405,6 +418,22 @@ video:hover {
       border-color: deeppink;
     }
   }
+
+
+button#toggle-button {
+  background-color: pink;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button#toggle-button:hover {
+  background-color: deeppink;
+}
+
+
   @media (prefers-reduced-motion: reduce) {
     video {
         display: none;
