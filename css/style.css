@@ -247,10 +247,8 @@ video {
   body {
     font-family: 'Poppins', 'Arial';
     background-color: #f9f9f9; 
-    color: #333; 
     line-height: 1.6; 
   }
-
 
   .skip {
     position: absolute;
@@ -309,7 +307,6 @@ video {
     margin-top: 20px;
     color: black; 
   }
-
 
 
   main h2 {
@@ -393,16 +390,14 @@ video {
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
+/* hover effect on all images and videos */
 img:hover,
 video:hover {
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-#hidden-content {
-  display: none;
-}
-
+/* h1 text gradient */
 .linear-text-gradient {
   background: linear-gradient(to top, deeppink, pink);
   -webkit-background-clip: text;
@@ -420,19 +415,35 @@ video:hover {
   }
 
 
-button#toggle-button {
-  background-color: pink;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 10px;
+  #signup-form {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-button#toggle-button:hover {
-  background-color: deeppink;
+
+#signup-form label {
+    display: block;
+    margin-bottom: 10px;
 }
 
+
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="password"],
+#signup-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* styling the form submit button - in desktop */
+#signup-form input[type="submit"] {
+    background-color: deeppink;
+    color: #fff;
+    cursor: pointer;
+}
 
   @media (prefers-reduced-motion: reduce) {
     video {
